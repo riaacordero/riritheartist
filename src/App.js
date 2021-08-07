@@ -1,10 +1,16 @@
-import './App.css';
+import Navbar from './components/Navbar.jsx';
+import LandingPage from "./components/intro/LandingPage.js";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-       <h1>Filler text</h1>
-    </div>
+    <Router>
+      <Navbar />
+      <LandingPage />
+      <Switch>
+        <Route path='/' exact />
+      </Switch>
+    </Router>
   );
 }
 

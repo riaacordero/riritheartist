@@ -1,0 +1,104 @@
+/* * MAIN * */
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: -ms-grid;
+    display: grid;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    /* max-width: 1000px; */
+
+}
+
+/* .box {
+    border: #111E6D solid 1px;
+    background: #FFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0.20rem;
+} */
+
+/* * BACKGROUND STYLING * */
+.bg-white {
+    background: #FFF;
+}
+
+.bg-img {
+    background: url("/images/bg.png");
+}
+
+
+/* * BACKGROUND POSITIONING * */
+
+.bg--top {
+    padding: 4rem 0 0 0;
+}
+
+.bg--center {
+    padding: 4rem 0;
+    align-content: center;
+}
+
+.bg--center-double {
+    padding: 8em 0;
+    align-content: center;
+}
+
+.bg--bottom {
+    padding: 0 0 4rem 0;
+}
+
+
+/* * TEXTS * */
+
+.text-align--center {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Montserrat', serif;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'Montserrat', serif;
+    font-size: 25px;
+}
+
+p {
+    font-family: "Inter", serif;
+}
+
+.color--blue {
+    color: #004D94;
+
+}
+
+/* * IMAGE * */
+
+.avatar {
+    padding: 5px;
+    width: 20%;
+    height: 20%;
+}
+
+/* * INTRO PAGE * */
+
+.contents {
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.social_icons {
+    gap: 0.25em;
+}
