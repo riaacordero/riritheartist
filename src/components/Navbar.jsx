@@ -8,9 +8,10 @@ function Navbar() {
     return (
         <>
             <nav className="Navbar">
-                <div className="container--nav flex">
-                    <h2 className="color--blue"> riritheartist </h2>
-                </div> 
+                <div className="flex">
+                    <h4 className="color--blue"> riritheartist </h4>
+                </div>
+                {/* <button className="nav__burger" onClick={e => setClick(!useState)}><img src="/images/others/menu__icon.png" alt="nav menu"/></button> */}
             </nav>
         </>
     )

@@ -11,11 +11,9 @@ export default function Landing() {
                     <a href="https://linkedin.com/in/riritheartist"><img src="/images/socials/linkedin-black.png" alt="linkedin"/></a>
                 </div>
                 <img src="/images/avatar.png" alt="avatar" className="avatar" />
-                <div className="column bg--center">
+                <div className="intro column bg--center">
                     <h1 className="bottom-low">Hello, <br></br> I am Riri!</h1>
-                    <div className="label box text-align--center">
-                        <h3 className="color--blue">a web designer.</h3>
-                    </div>
+                    <h3 className="color--blue" style={{margin: 1}}>&lt;/designer, developer&gt;</h3>
                 </div>
             </div>
             <div>
