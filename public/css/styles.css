@@ -16,14 +16,13 @@
 .container {
     width: 85%;
     margin: 0 auto;
-    /* max-width: 1000px; */
 }
 
 .box {
     background-color: #FFF;
     border: #004D94 solid 1px;
     border-radius: 16px;
-    box-shadow: 0 4px 4px rgba(39, 39, 39, 0.25);
+    box-shadow: 0 2px 2px rgba(39, 39, 39, 0.25);
 }
 
 .box-white {
@@ -45,11 +44,15 @@
     color: white;
 }
 
+
 /* * BACKGROUND STYLING * */
 .bg-white {
     background: #FFF;
 }
 
+.bg-white-b {
+    background: #F8F8F8;
+}
 .bg-img {
     background: url("/images/bg.png");
 }
@@ -161,7 +164,7 @@ p {
 .contents {
     align-items: center;
     justify-content: center;
-    gap: 1em;
+    gap: 0.5em;
 }
 
 .social_icons {
