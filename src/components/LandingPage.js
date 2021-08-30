@@ -5,16 +5,17 @@ export default function Landing() {
     return (
         <main className="main__bg">
             <div className="bg-img contents flex top-high bottom-high">
-                <div className="social_icons flex column">
-                    <a href="https://behance.net/riritheartist" ><img src="/images/socials/behance-white.svg" alt="behance"/></a>
-                    <a href="https://github.com/riaacordero"><img src="/images/socials/github-white.svg" alt="github"/></a>
-                    <a href="https://linkedin.com/in/riritheartist"><img src="/images/socials/linkedin-white.svg" alt="linkedin"/></a>
-                </div>
-                <img src="/images/avatar.png" alt="avatar" className="avatar" />
+                <img src="/images/avatar.png" alt="avatar" className="avatar flex" />
                 <div className="intro column bg--center">
                     <h1 className="color--white bottom-low">Hello, <br></br> I am Riri!</h1>
                     <h3 className="color--orange" style={{margin: 1}}>&lt;/designer, developer&gt;</h3>
+                    <div className="social_icons flex row">
+                        <a href="https://behance.net/riritheartist" ><img src="/images/socials/behance-white.svg" alt="behance"/></a>
+                        <a href="https://github.com/riaacordero"><img src="/images/socials/github-white.svg" alt="github"/></a>
+                        <a href="https://linkedin.com/in/riritheartist"><img src="/images/socials/linkedin-white.svg" alt="linkedin"/></a>
+                    </div>
                 </div>
+                
             </div>
             <div className="project contents flex column" style={{gap: 0}} >
                 <h2 className="top-high color--orange"> Here's what I do: </h2>

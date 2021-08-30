@@ -1,26 +1,36 @@
-import React, {useState} from 'react'
+import React, {Component} from 'react'
 import { Link } from 'react-router-dom'
+import { MenuItems } from './NavbarItems'
+import { Button } from './Button'
 
-export default function Navbar() {
-    const [isClicked, setClick] = useState(false);
+class Navbar extends Component{
+    state= { isClicked: false };
+    handleClick = () => {
+        // Sets state value of isClicked to false to switch between hamburger icon and 'x'. 
+        this.setState({isClicked : !this.state.isClicked})
+    }
 
-    return (
-            <header className="Navbar">
-                <div className="container container--nav flex flex--col">
-                    <div className="flex flex--nav-icons">
-                        <Link to="/"> 
-                            <h3 className="color--black"> riritheartist </h3>
-                        </Link>
-                        <button className="nav__burger" onClick={e => setClick(!isClicked)}><img src="/images/others/menu__icon.svg" alt="menu"/></button>     
-                    </div>
-                    <nav>
-                        <ul className={`nav__ul ${isClicked ? "nav__ul--open" : "" }`}>
-                            <li className="nav__li"> <Link to="/" className="nav__link"> About </Link> </li>
-                            <li className="nav__li"> <Link to="/" className="nav__link"> Projects </Link> </li>
-                            <li className="nav__li"> <Link to="/" className="nav__link"> Contact </Link> </li>
-                        </ul>
-                    </nav>
+    render(){
+        return(
+            <nav className="navbar-items">
+                <h3 className="navbar-logo">riritheartist</h3>
+                <div className="menu-icon" onClick={this.handleClick}>
+                    <i className={this.state.isClicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
-            </header>
-    )
+                <ul className={this.state.isClicked ? "nav-menu active" : "nav-menu"}>
+                    {MenuItems.map((item, index) =>{
+                        return(
+                            <li key={index}>
+                                <a className={item.className} href={item.url}>
+                                    {item.title}
+                                </a>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </nav>
+        )
+    }
 }
+
+export default Navbar;
