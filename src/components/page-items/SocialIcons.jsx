@@ -1,7 +1,7 @@
 export const SocialIcons = [
     {
         title: "behance",
-        url: "fab fa-behance",
+        url: "https://www.behance.com/riritheartist",
         className: "social-icons",
         source:"fab fa-behance"
     },
