@@ -106,11 +106,11 @@
 }
 
 .top-high {
-    padding-top: 4em;
+    padding-top: 8em;
 }
 
 .bottom-high {
-    padding-bottom: 4em;
+    padding-bottom: 8em;
 }
 
 /* * TEXTS * */
@@ -152,8 +152,8 @@ p {
 
 .avatar {
     padding: 5px;
-    width: 20%;
-    height: 20%;
+    width: 25%;
+    height: 25%;
 }
 
 /* * NAVIGATION BAR * */
@@ -182,8 +182,20 @@ p {
     gap: 0.5em;
 }
 
-.social_icons {
-    gap: 0.25em;
+/* SOCIAL ICONS */
+.social-icons--display{
+    font-size: 25px;
+    gap:0.5em;
+    list-style: none;
+    padding-left: 10px;
+}
+.social-icons{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.social-icons:hover{
+    color: #FF9900;
 }
 
 /* * PROJECT GALLERY * */
@@ -198,27 +210,15 @@ p {
     padding: 32px;
 }
 
-.social_icons{
-    gap:0.5em;
-    padding-top: 25px;
-}
-
 /* NAVBAR */
 
-.container--nav {
-    /* desktop
-    width: 92%; */
-    width: 85%;
-    margin: 0 auto;
-    max-width: 1533px;
-}
-
 .navbar-items {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Code Pro', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    background-color: #1E272D;
 }
 
 .navbar-logo {
@@ -235,7 +235,7 @@ p {
 .nav-menu{
     display: grid;
     grid-template-columns: repeat(5, auto);
-    grid-gap: 10px;
+    grid-gap: 20px;
     list-style: none;
     width: 70vw;
     justify-content: end;
@@ -243,22 +243,34 @@ p {
 }
 
 .nav-links {
-    color: #1E272D;
+    color:#FFF;
     text-decoration: none;
-    padding: 2rem, 1rem;
+    border-radius: 15px;
+    transition: all 0.2s ease-in-out;
 }
 
 .nav-links:hover{
     background-color:#FF9900;
-    color: #FFF;
-    border-spacing: 100px;
-    border-radius: 15px;
+    color: #1E272D;
+    border-radius: 20px;
     transition: all 0.2s ease-out;
-    padding: 0.5rem, 1rem;
+    /* Padding */
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
+
+.navbar-logo{
+    color:#FFF;
+}
+.navbar-logo:hover{
+    color: #FF9900;
+
+}
 .fa-bars{
-    color:#1E272D
+    color:#ffffff;
 }
 
 .nav-links-mobile{
@@ -378,6 +390,21 @@ p {
     /* LANDING PAGE */
     .contents{
         flex-direction: column;
+        gap: 0em;
+    }
+    
+    .avatar{
+        flex-direction: column;
+        padding: 0px;
+        width: 35%;
+        height: 35%;
+    }
+    .bg--center{
+        padding: 2rem;
+    }
+    .align-center{
+        text-align: center;
+        justify-content: center;    
     }
     .social_icons{
         flex-direction: row;
