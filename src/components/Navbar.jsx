@@ -1,7 +1,5 @@
 import React, {Component} from 'react'
-import { Link } from 'react-router-dom'
-import { MenuItems } from './NavbarItems'
-import { Button } from './Button'
+import { MenuItems } from './page-items/NavbarItems'
 
 class Navbar extends Component{
     state= { isClicked: false };

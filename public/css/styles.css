@@ -1,5 +1,7 @@
 /* * MAIN * */
-
+body{
+    margin:0;
+}
 .flex {
     display: flex;
 }
@@ -55,6 +57,7 @@
     background-image: url("/images/bg-img.png"); 
 }
 
+
 /* * BACKGROUND POSITIONING * */
 
 .bg--top {
@@ -75,6 +78,7 @@
     padding: 0 0 4rem 0;
 }
 
+
 /* FLEX */
 
 .flex--col{
@@ -84,6 +88,7 @@
 .flex--row{
     flex-direction: row;
 }
+
 
 /* * ITEMS POSITIONING * */
 
@@ -113,6 +118,15 @@
     padding-bottom: 8em;
 }
 
+.top-mid {
+    padding-top: 4em;
+}
+
+.bottom-mid {
+    padding-bottom: 4em;
+}
+
+
 /* * TEXTS * */
 
 .text-align--center {
@@ -125,7 +139,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Montserrat', serif;
+    font-family: 'Source Code Pro', serif;
     font-style: normal;
     font-size: 25px;
 }
@@ -137,14 +151,27 @@ h3 {
 
 h4,
 p {
-    font-family: "Inter", serif;
+    font-family: "Montserrat", serif;
 }
 
+a{
+    font-family: "Montserrat", serif;
+    text-decoration: none;
+    color: #FF9900;
+}
 .par--center {
     justify-content: center;
     text-align: center;
     padding-left: 5em;
     padding-right: 5em;
+}
+
+.par--left{
+    justify-content: center;
+    text-align: left;
+    padding-left: 5em;
+    padding-right: 5em;
+
 }
 
 
@@ -155,6 +182,7 @@ p {
     width: 25%;
     height: 25%;
 }
+
 
 /* * NAVIGATION BAR * */
 
@@ -173,6 +201,7 @@ p {
     justify-content: space-between;
     align-items: center;
 }
+
 
 /* * INTRO PAGE * */
 
@@ -198,11 +227,22 @@ p {
     color: #FF9900;
 }
 
-/* * PROJECT GALLERY * */
 
-.project {
+/* * ABOUT * */
+
+.about {
     padding-bottom: 5em;
 }
+
+.icon--gap{
+    padding-top: 1em;
+    gap: 1em;
+    justify-content: center;
+}
+.display--img{
+    width: 50px;
+}
+
 .project--gallery {
     display: flex;
     flex-direction: row;
@@ -210,9 +250,13 @@ p {
     padding: 32px;
 }
 
+
 /* NAVBAR */
 
 .navbar-items {
+    position: fixed;
+    top:0;
+    width: 100%;
     font-family: 'Source Code Pro', sans-serif;
     display: flex;
     justify-content: center;
@@ -261,7 +305,6 @@ p {
     padding-right: 15px;
 }
 
-
 .navbar-logo{
     color:#FFF;
 }
@@ -280,6 +323,7 @@ p {
 .menu-icon{
     display: none;
 }
+
 
 /* BUTTON */
 
@@ -325,6 +369,7 @@ p {
     font-size: 20px;
     color: #FFF;
 }
+
 
 @media screen and (max-width:960px) {
     /* NAVBAR ITEMS */
@@ -390,7 +435,7 @@ p {
     /* LANDING PAGE */
     .contents{
         flex-direction: column;
-        gap: 0em;
+
     }
     
     .avatar{
