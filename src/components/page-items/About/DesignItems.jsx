@@ -7,8 +7,14 @@ export const DesignItems = [
     },
     {
         src: "/images/design/adobe-ps.svg",
-        url: "/",
+        url: "#",
         alt:"photoshop",
+        className: "display--img"
+    },
+    {
+        src: "/images/design/adobe-xd.svg",
+        url: "#",
+        alt:"adobe xd",
         className: "display--img"
     },
     {
