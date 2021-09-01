@@ -58,9 +58,6 @@ export default function Landing() {
             </div>
             
             <div className="bg-img contents flex top-high bottom-high">
-                {/* <h2 className="top-high color--blue"> Connect with me!</h2>
-                <p className="bottom-high">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam turpis arcu ipsum congue aliquet. Euismod ultrices est at felis metus auctor in quam pellentesque. Mauris pellentesque ultricies elementum amet. Fermentum magna a tincidunt sodales scelerisque lacus vitae. Eu, feugiat gravida et dolor habitasse porta luctus sit felis.</p> */}
-
                 {/* This is for the contact card. */}
             </div>
         </main>

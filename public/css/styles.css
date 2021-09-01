@@ -257,7 +257,6 @@ a{
     position: fixed;
     top:0;
     width: 100%;
-    font-family: 'Source Code Pro', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -287,6 +286,7 @@ a{
 }
 
 .nav-links {
+    font-family: "Source Code Pro",serif;
     color:#FFF;
     text-decoration: none;
     border-radius: 15px;
