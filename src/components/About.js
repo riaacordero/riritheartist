@@ -1,29 +1,10 @@
-import React from 'react'
+import React from 'react';
 import { TechItems } from './page-items/About/TechItems';
-import { DesignItems } from './page-items/About/DesignItems'
-import { SocialIcons } from './page-items/SocialIcons';
+import { DesignItems } from './page-items/About/DesignItems';
 
-export default function Landing() {
+export default function Main() {
     return (
-        <main className="main__bg">
-            <div className="bg-img contents flex top-high bottom-high">
-                <img src="/images/avatar.png" alt="avatar" className="avatar flex" />
-                <div className="intro column bg--center">
-                    <h1 className="color--white bottom-low align-center">Hello, <br></br> I am Riri!</h1>
-                    <h3 className="color--orange" style={{margin: 1}}>&lt;/designer, developer&gt;</h3>
-                    <ul className="social-icons--display align-center flex row">
-                        {SocialIcons.map((item, index) =>{
-                            return(
-                                <li key={index}>
-                                    <a className={item.className} href={item.url}>
-                                        <i className={item.source}></i>
-                                    </a>
-                                </li>
-                            )
-                        })}
-                    </ul>
-                </div>
-            </div>
+        <main className="main__bg" id="about">
             <div className="about contents flex column bottom-high" style={{gap: 0}} >
                 <h2 className="color--black top-mid">&lt;/About me&gt;</h2>
                 <div className="par--center">
@@ -56,10 +37,6 @@ export default function Landing() {
                     </div>
                 </div>
             </div>
-            
-            <div className="bg-img contents flex top-high bottom-high">
-                {/* This is for the contact card. */}
-            </div>
         </main>
-    )
+    );
 }

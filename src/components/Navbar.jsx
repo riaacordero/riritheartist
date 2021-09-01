@@ -1,5 +1,6 @@
-import React, {Component} from 'react'
-import { MenuItems } from './page-items/NavbarItems'
+import React, {Component} from 'react';
+import { MenuItems } from './page-items/NavbarItems';
+import { Link } from 'react-scroll';
 
 class Navbar extends Component{
     state= { isClicked: false };
@@ -11,7 +12,17 @@ class Navbar extends Component{
     render(){
         return(
             <nav className="navbar-items">
-                <h3 className="navbar-logo">riritheartist</h3>
+                {/* Scrolls to 'main' page. */}
+                <Link
+                    activeClass="active"
+                    to="main"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}>
+                    <h3 className="navbar-logo">riritheartist</h3>
+                </Link>
+
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.isClicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
@@ -19,9 +30,15 @@ class Navbar extends Component{
                     {MenuItems.map((item, index) =>{
                         return(
                             <li key={index}>
-                                <a className={item.className} href={item.url}>
+                                <Link activeClass="active"
+                                    to={item.url} 
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}
+                                    className={item.className}>
                                     {item.title}
-                                </a>
+                                </Link>
                             </li>
                         )
                     })}

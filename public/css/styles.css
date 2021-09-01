@@ -303,6 +303,7 @@ a{
     padding-bottom: 6px;
     padding-left: 15px;
     padding-right: 15px;
+    cursor:pointer;
 }
 
 .navbar-logo{
