@@ -246,6 +246,13 @@ a:hover{
 }
 .display--img{
     width: 50px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.display--img:hover{
+    transition: all 0.2s ease-in-out;
+    transform: scale(150%);
 }
 
 .display--avatar{
@@ -340,10 +347,10 @@ a:hover{
     bottom:0;
     width: 100%;
     display: flex;
-    justify-content: left;
-    padding-left: 5em;
+    justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    text-align: center;
+    font-size: 15px;
     background-color: #1E272D;
     color: #FFF;
 }
