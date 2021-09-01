@@ -206,7 +206,6 @@ a{
 /* * INTRO PAGE * */
 
 .contents {
-    align-items: center;
     justify-content: center;
     gap: 0.5em;
 }
@@ -232,6 +231,7 @@ a{
 
 .about {
     padding-bottom: 5em;
+    text-align: center;
 }
 
 .icon--gap{
@@ -241,6 +241,11 @@ a{
 }
 .display--img{
     width: 50px;
+}
+
+.display--avatar{
+    justify-content: center;
+    gap: 1em;
 }
 
 .project--gallery {
@@ -325,6 +330,23 @@ a{
     display: none;
 }
 
+/* LINK-STYLE BUTTON */
+
+.link-button--primary{
+    color: #FFF;
+    text-decoration:underline;
+    text-align: center;
+    font-size: 10px;
+}
+
+.linkbutton{
+    font-family: "Source Code Pro",serif;
+}
+
+.linkbutton:hover{
+    color:#FF9900;
+    cursor: pointer;
+}
 
 /* BUTTON */
 
