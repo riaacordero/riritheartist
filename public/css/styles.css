@@ -171,6 +171,13 @@ a:hover{
     padding-right: 5em;
 }
 
+.short--width{
+    text-align:justify;
+    text-align-last: center;
+    width:55%;
+    
+}
+
 .par--left{
     justify-content: center;
     text-align: left;
