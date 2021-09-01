@@ -1,4 +1,6 @@
 import React from 'react'
+import { TechItems } from './page-items/About/TechItems';
+import { DesignItems } from './page-items/About/DesignItems'
 import { SocialIcons } from './page-items/SocialIcons';
 
 export default function Landing() {
@@ -29,20 +31,28 @@ export default function Landing() {
                 </div>
                 <div className="par--center">
                     <h4> I am currently learning: </h4>
-                    <div className= "icon--gap flex">
-                        <img className="display--img" src="/images/tech/python.svg" alt="Python"></img>
-                        <img className="display--img" src="/images/tech/java.svg" alt="Java"></img>
-                        <img className="display--img" src="/images/tech/dart.svg" alt="Dart"></img>
-                        <img className="display--img" src="/images/tech/flutter.svg" alt="Flutter"></img>
-                        <img className="display--img" src="/images/tech/js.svg" alt="Javascript"></img>
-                        <img className="display--img" src="/images/tech/react.svg" alt="ReactJS"></img>
+                    <div className="icon--gap flex">
+                        {TechItems.map((item, index) =>{
+                                return(
+                                    <a href={item.url}>
+                                        <i>
+                                            <img className={item.className} src={item.src} alt={item.alt}></img>
+                                        </i>
+                                    </a>
+                                )
+                            })}
                     </div>
                     <h4 className="icon--gap flex">I am skilled on using the following platforms:</h4>
-                    <div className= "icon--gap flex">
-                        <img className="display--img" src="/images/design/figma.svg" alt="Python"></img>
-                        <img className="display--img" src="/images/design/adobe-ps.svg" alt="Python"></img>
-                        <img className="display--img" src="/images/tech/github.svg" alt="Python"></img>
-                        <img className="display--img" src="/images/tech/vscode.svg" alt="Python"></img>
+                    <div className="icon--gap flex">
+                        {DesignItems.map((item, index) =>{
+                                return(
+                                    <a href={item.url}>
+                                        <i>
+                                            <img className={item.className} src={item.src} alt={item.alt}></img>
+                                        </i>
+                                    </a>
+                                )
+                            })}
                     </div>
                 </div>
             </div>
