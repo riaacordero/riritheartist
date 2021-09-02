@@ -476,6 +476,8 @@ input{
 
     .navbar-items{
         position: relative;
+        transition: all 0.2s ease;
+        gap: 1em;
     }
 
     .nav-menu {
@@ -485,28 +487,36 @@ input{
         height: 300px;
         position: absolute;
         top: 80px;
-        right: -100%;
+        right: 100%;
+        padding-bottom: 40px;
         opacity: 1;
-        transition: all 0.5s ease;
+        transition: all 0.2s ease;
     }
 
     .nav-menu.active{
         background-color: #1E272D;
         left: 0%;
         opacity: 1;
-        transition: all 0.s ease;
+        transition: all 0.2s ease-in-out;
         z-index: 1;
     }
+
     .nav-links{
-        text-align: center;
+        text-align: left;
         color: #FFF;
+        border-radius: 0px;
         padding: 20px;
         width: 100%;
         display: table;
     }
     .nav-links:hover{
-        background-color: #FF9900;
-        border-radius: 0;
+        text-decoration: underline;
+        color: #FF9900;
+        background-color: transparent;
+        border-radius: 0px;
+        padding: 20px;
+        width: 100%;
+        cursor: pointer;
     }
     .navbar-logo{
         color: #FFF;
@@ -521,6 +531,7 @@ input{
         top: 0;
         right: 0;
         transform: translate(-100%, 60%);
+        transition: all 0.2s ease-in;
         font-size: 1.8rem;
         cursor: pointer;
     }
@@ -539,6 +550,10 @@ input{
 
     }
 
+    LinkButton{
+        display: none;
+    }
+
     .intro{
         display: flex;
         flex-direction: column;
@@ -548,7 +563,7 @@ input{
     
     .display--avatar{
         justify-content: center;
-        align-items: center;
+        align-self: center;
 
     }
     .avatar{
@@ -569,4 +584,11 @@ input{
         flex-direction: row;
     }
 
+    .short--width{
+        width: 100%;
+    }
+
+    .about.par--center{
+        padding:0px;
+    }
 }

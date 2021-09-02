@@ -7,7 +7,7 @@ export default function Main() {
         <main className="main__bg" id="about">
             <div className="par--center contents flex column bottom-high" style={{gap: 0}} >
                 <h2 className="color--black top-mid">&lt;/About me&gt;</h2>
-                <div className="par--center flex">
+                <div className="about par--center flex">
                     <p className="short--width">I am a 19-year old Computer Science student from <a href="https://mcm.edu.ph" >Malayan Colleges Mindanao</a>, a passionate artist, and an aspiring front-end web/app developer from the Philippines. I am a freelance digital illustrator and an enthusiast in UI/UX research & design. I also have a passion to teach and I would like to become an educator someday. As a tech enthusiast, I am very passionate in learning about smartphones and similar tech... I think you can consider me an Apple and Google fangirl!</p>
                 </div>
                 <div className="par--center">

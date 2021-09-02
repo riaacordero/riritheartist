@@ -5,7 +5,7 @@ export default function Portfolio() {
     return(
         <main className="main__bg" id="portfolio">
             <div className="bg-img contents flex top-high bottom-high">
-                <h3 className="color--white">[Portfolio TBA]</h3>
+                <h3 className="color--white about par--center">[Portfolio TBA]</h3>
             </div>
         </main> 
     )
