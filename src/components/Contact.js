@@ -12,7 +12,7 @@ export default function Contact() {
         <div className="contents flex column top-high bottom-high">
                 <h2 className="color--black par--center">Let's Talk!</h2>
                 <div className="par--center flex">
-                    <p className="short--width">Got anything in mind or you just want to say hi? Send me a message through this contact form:</p>
+                    <p className="short--width">Got anything in mind? Just want to say hi? Send me a message through this contact form:</p>
                 </div>
                 <form className ="forms flex" onSubmit={handleSubmit}>
                     <FormGroup>

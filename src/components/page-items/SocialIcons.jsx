@@ -1,9 +1,15 @@
-export const SocialIcons = [
+export const SocialIcons = [    
+    // {
+    // title: "behance",
+    // url: "https://www.behance.net/riritheartist",
+    // className: "social-icons",
+    // source:"fab fa-behance"
+    // },
     {
-        title: "behance",
-        url: "https://www.behance.com/riritheartist",
+        title: "instagram",
+        url: "https://www.instagram.com/riritheartist",
         className: "social-icons",
-        source:"fab fa-behance"
+        source:"fab fa-instagram"
     },
     {
         title: "github",
