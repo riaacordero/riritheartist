@@ -5,7 +5,7 @@ import { LinkButton } from './page-items/Button/LinkButton'
 export default function Main() {
     const [imgURL, setImgURL] = useState('images/avatar-art.png')
     const changeUrl = () => {
-        if (imgURL == 'images/avatar-art.png') {
+        if (imgURL === 'images/avatar-art.png') {
             setImgURL('images/avatar-face.png')
          } else {
             setImgURL('images/avatar-art.png')
@@ -17,7 +17,7 @@ export default function Main() {
             <div className="bg-img contents flex top-high bottom-high">
                 <div className="display--avatar avatar flex column">
                     {/* SHOW/HIDE feature added. To be modified for later. */}
-                    <img src={imgURL}/>
+                    <img src={imgURL} alt='avatar'/>
                     <LinkButton onClick ={()=> changeUrl()}>face reveal</LinkButton>
                 </div>
                 <div className="intro column bg--center">

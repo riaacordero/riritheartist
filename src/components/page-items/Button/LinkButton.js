@@ -5,10 +5,6 @@ const LinkSTYLES = [
     'link-button--primary',
 ]
 
-const SIZES = [
-    'link-button--small',
-]
-
 export const LinkButton = ({
     children,
     type,
