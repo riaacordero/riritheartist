@@ -425,6 +425,15 @@ a:hover{
     color: #FFF;
 }
 
+/* SUCCESS MSG */
+.sucess-msg{
+    color:green;
+    padding: 10px 15px;
+}
+.error-msg{
+    color:red;
+    padding: 10px 15px;
+}
 
 @media screen and (max-width:960px) {
     /* NAVBAR ITEMS */
