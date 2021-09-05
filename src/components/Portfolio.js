@@ -1,11 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Button } from './page-items/Button/Button';
+import ToggleSwitch from './page-items/Button/ToggleSwitch';
+import ArtPortfolio from './page-items/PortfolioItems/ArtPortfolio'
+import DevPortfolio from './page-items/PortfolioItems/DevPortfolio'
 
 
 export default function Portfolio() {
+    const [isToggled, setIsToggled] = useState(true)
+
     return(
         <main className="main__bg" id="portfolio">
-            <div className="bg-img contents flex top-high bottom-high">
-                <h3 className="color--white about par--center">[Portfolio TBA]</h3>
+            <div className="contents flex flex--col top-high bottom-high">
+                <div className="flex flex--row">
+                    <ToggleSwitch rounded={true} isToggled={isToggled} onToggle={() => setIsToggled(!isToggled)}/>
+                </div>
+                {isToggled === true && <ArtPortfolio/>}
+                {isToggled === false && <DevPortfolio/>}
             </div>
         </main> 
     )
