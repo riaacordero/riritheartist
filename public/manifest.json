@@ -1,6 +1,6 @@
 {
-  "short_name": "Portfolio Website",
-  "name": "Create React App Sample",
+  "short_name": "riritheartist",
+  "name": "Riri's portfolio website built using React",
   "icons": [
     {
       "src": "avatar.ico",
