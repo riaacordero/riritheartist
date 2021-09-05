@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import { MenuItems } from './page-items/NavbarItems';
-import { Link } from 'react-scroll';
 
 class Footer extends Component{
     render(){

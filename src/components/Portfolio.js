@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Button } from './page-items/Button/Button';
 import ToggleSwitch from './page-items/Button/ToggleSwitch';
 import ArtPortfolio from './page-items/PortfolioItems/ArtPortfolio'
 import DevPortfolio from './page-items/PortfolioItems/DevPortfolio'
