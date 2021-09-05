@@ -1,7 +1,7 @@
 # You found my portfolio!
 
-Hi there, this is my first-ever personal project and portfolio website. At the moment, I haven't opened this to the public yet so I cannot provide you the link.
+Hi there, this is my first-ever personal webdev project and portfolio website.
 
-[Repo is currently private!]
+[Website will be up soon! 🤞]
 
-Written in Javascript and powered by ReactJS.
+Built using React.
