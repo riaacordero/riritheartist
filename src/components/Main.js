@@ -17,7 +17,7 @@ export default function Main() {
             <div className="bg-img contents flex top-high bottom-high">
                 <div className="display--avatar avatar flex column">
                     {/* SHOW/HIDE feature added. To be modified for later. */}
-                    <img src={imgURL} alt='avatar'/>
+                    <img className= "avatar-rounded"src={imgURL} alt='avatar'/>
                     <LinkButton onClick ={()=> changeUrl()}>face reveal</LinkButton>
                 </div>
                 <div className="intro column bg--center">

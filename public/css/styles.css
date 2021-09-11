@@ -224,6 +224,9 @@ a:hover{
     gap: 0.5em;
 }
 
+.avatar-rounded{
+    border-radius: 100%;
+}
 /* SOCIAL ICONS */
 .social-icons--display{
     font-size: 25px;
