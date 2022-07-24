@@ -2,7 +2,8 @@
 body{
     margin:0;
 }
-.flex {
+
+.flex{
     display: flex;
 }
 
@@ -12,7 +13,13 @@ body{
 }
 
 .column {
+    display: flex;
     flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
 }
 
 .container {
@@ -80,15 +87,6 @@ body{
 
 
 /* FLEX */
-
-.flex--col{
-    flex-direction: column;
-}
-
-.flex--row{
-    flex-direction: row;
-}
-
 
 /* * ITEMS POSITIONING * */
 

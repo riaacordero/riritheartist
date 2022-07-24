@@ -9,8 +9,8 @@ export default function Portfolio() {
 
     return(
         <main className="main__bg" id="portfolio">
-            <div className="contents flex flex--col top-high bottom-high">
-                <div className="flex flex--row">
+            <div className="contents column top-high bottom-high">
+                <div className="row">
                     <ToggleSwitch rounded={true} isToggled={isToggled} onToggle={() => setIsToggled(!isToggled)}/>
                 </div>
                 {isToggled === true && <ArtPortfolio/>}
